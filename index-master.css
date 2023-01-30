@@ -1,0 +1,451 @@
+
+        @font-face {
+            font-family: Gardens CM Regular;
+            src: url(fonts/20011.ttf);
+        }
+
+        @font-face {
+            font-family: LeoHand;
+            src: url(fonts/LeoHand.ttf);
+        }
+
+        @font-face {
+            font-family: KyrillaSansSerif;
+            src: url(fonts/KyrillaSansSerif.ttf);
+        }
+
+        @keyframes background {
+            100% {
+                background-position: -500px 100px;
+            }
+        }
+        
+
+
+
+        header,
+        nav,
+        main,
+        section,
+        footer {
+            color: white;
+            border-radius: 15px;
+            padding: 10px;
+            background: linear-gradient(to bottom right, purple, blue);
+
+        }
+
+        .grid {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 130px 400px 470px repeat(4, 450px) 90px;
+            grid-template-areas: "header header" "nav main" "nav section" "nav section" "nav section" "nav section" "nav section" "nav footer";
+
+        }
+
+        header {
+            grid-area: header;
+            background: url(pictures/elements/head.jpg);
+            background-size: 1fr;
+
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        section * {
+            grid-area: section;
+
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid pink;
+        }
+
+        table {
+            font-family: 'KyrillaSansSerif', 'Arial';
+            font-size: 15pt;
+            margin-left: 2px;
+            border-collapse: collapse;
+            border-color: pink;
+            width: 820px;
+            height: 350px;
+            table-layout: fixed;
+        }
+
+        nav div {
+            position: fixed;
+            margin-top: -20px;
+        }
+
+        img {
+            border-radius: 15px;
+        }
+
+        
+
+        body {
+            cursor: url(cursors/link.cur), auto;
+            background: url(pictures/elements/background.png);
+            background-size: 1fr;
+
+        }
+
+        
+
+        h1 {
+            text-align: center;
+            padding-top: 25px;
+            font-family: 'Impact', 'Arial';
+            font-size: 50pt;
+            font-stretch: extra-expanded;
+            letter-spacing: 2px;
+            margin-top: 0;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 20pt;
+            margin-top: 2px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: 'Impact', 'Arial';
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        fieldset {
+            cursor: url(cursors/alt.cur), auto;
+            font-family: 'Gardens CM Regular', 'Arial';
+            font-size: 10pt;
+            font-weight: 600;
+        }
+
+        input,
+        textarea {
+            color: white;
+            background-color: rgba(104, 0, 104, 0.449);
+        }
+
+        div {
+            float: left;
+            white-space: nowrap;
+        }
+
+        ul {
+            text-align: center;
+            padding: 0;
+            margin-left: 15px;
+            margin-top: -5px;
+        }
+
+        li {
+
+            border: 1px solid pink;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        li:hover {
+            border-color: white;
+            border-right-width: 5px;
+        }
+
+
+        a {
+            font-family: 'Gardens CM Regular', 'Arial';
+            text-indent: 20px;
+            font-weight: 800;
+            cursor: url(cursors/text1.cur), auto;
+            text-decoration: none;
+            color: pink;
+            font-size: 15px;
+        }
+
+        a:hover {
+            color: white;
+            border-color: white;
+        }
+
+        .review {
+            width: 200px;
+            padding-right: 40px;
+            white-space: normal;
+        }
+
+        .mainText {
+            font-family: 'Gardens CM Regular', 'Arial';
+            text-indent: 20px;
+            font-size: 15pt;
+            font-weight: 300;
+            line-height: 30px;
+            text-align: justify;
+        }
+
+        .clientBio {
+            font-family: 'Gardens CM Regular', 'Arial';
+            font-size: 15pt;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .quote {
+            font-family: 'LeoHand', 'Times New Roman';
+            font-size: 14pt;
+            line-height: 20px;
+            text-align: justify;
+        }
+
+        .menu {
+            text-align: center;
+            font-family: 'Impact', 'Arial';
+            font-stretch: extra-expanded;
+            letter-spacing: 2px;
+            font-size: 15pt;
+        }
+
+        .gradient {
+            background: linear-gradient(darkblue, rgb(104, 0, 104), rgb(104, 0, 104), darkblue);
+            animation: background 1s infinite alternate;
+        }
+
+        .award {
+            width: 300px;
+            float: left;
+            margin-left: 110px;
+            padding-top: 20px;
+            height: 10px;
+        }
+
+        .empHeader {
+            font-family: 'Impact';
+            font-size: 95pt;
+            line-height: 80px;
+            text-shadow: black 0 0 5px;
+
+        }
+
+        .empPic {
+            border-radius: 100%;
+            margin-right: 30px;
+        }
+
+        .empDesc p {
+            font-family: 'Gardens CM Regular', 'Arial';
+            font-size: 15pt;
+            font-weight: 700;
+            text-align: center;
+            line-height: 20px;
+            margin-top: 0;
+            margin-right: 20px;
+        }
+
+        .clientsHead {
+            float: right;
+            text-align: right;
+            height: 200px;
+            width: 900px;
+            position: relative;
+            right: 10px;
+            bottom: 110px
+        }
+
+        .scale {
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .scale img {
+            transition: 0.5s;
+            display: block;
+        }
+
+        .scale img:hover {
+            transform: scale(1.2);
+        }
+
+        img.rotate {
+            border-radius: 50%;
+            -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition: transform .8s ease-in-out;
+        }
+
+        img.rotate:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        section div img {
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        section div img:hover {
+            -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+        }
+
+
+        /* ! FOR LOW-RESOLUTION SCREEN */
+
+        @media screen and (max-width:580px) {
+
+            body {
+                width: 564px;
+            }
+
+            .grid {
+                grid-template-columns: 150px 1fr;
+                grid-template-rows: 130px 990px auto auto repeat(3, 500px) 90px;
+            }
+
+/*          ! NAV BAR + HEADER  */
+
+            header {
+                width: 564px;
+                padding: 0;
+            }
+
+            header h1 {
+                font-size: 46px;
+                width: 534px;
+                margin: 0;
+                padding: 15px;
+            }
+
+            nav {
+                width: 130px;
+            }
+
+            .navbar {
+                width: 130px;
+                white-space: normal;
+            }
+
+            .menu {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            .main-logo {
+                width: 130px;
+                margin-bottom: -10px;
+            }
+
+            .nav-list {
+                margin: 0;
+                list-style: none;
+            }
+
+            .nav-item {
+                box-sizing: border-box;
+                width: auto;
+                margin-top: 30px;
+            }
+
+            .nav-item a {
+                font-size: 20px;
+                line-height: 1;
+            }
+
+/*            ! SECTION MAIN */
+
+            main {
+                width: 390px;
+            }
+
+            .main-pic {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+
+/*            ! SECTION REVIEW */
+
+            .section-review {
+                width: 390px;
+            }
+
+            .section-review h2 {
+                margin-bottom: 5px;
+            }
+
+            .scale {
+                padding: 15px 30px;
+            }
+
+            .scale img:hover {
+            transform: scale(1.1);
+            }
+
+            .review {
+                width: 330px;
+                padding: 0;
+                text-align: center;
+            }
+
+            .review:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            .review img {
+                width: 100%;
+                padding: 0;
+            }
+
+/*            ! SECTION ORDER */
+
+            .section-order {
+                width: 410px;
+                padding: 10px 0;
+            }
+
+            .fieldset-container {
+                width: 370px;
+                padding: 0 20px;
+                white-space: normal;
+            }
+
+            .fieldset-container fieldset {
+                width: auto;
+                margin: 0 auto;
+                padding: 10px;
+                white-space: normal;
+/*                border: none;*/
+
+            }
+
+            .fieldset-textarea {
+                width: 315px;
+            }
+
+            .fieldset-inner-container{
+                width: 0 auto;
+                margin-top: 20px;
+            }
+
+            .fieldset-inner-container fieldset {
+                padding: 10px;
+            }
+        }
