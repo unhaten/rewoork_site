@@ -305,7 +305,7 @@ section div img:hover {
 
     .grid {
         grid-template-columns: 150px 1fr;
-        grid-template-rows: 130px 990px auto auto repeat(3, 500px) 90px;
+        grid-template-rows: 130px 990px auto auto 770px 920px 1850px 90px;
     }
 
     /*          ! NAV BAR + HEADER  */
@@ -357,7 +357,7 @@ section div img:hover {
         line-height: 1;
     }
 
-    /*            ! SECTION MAIN */
+    /* ! SECTION MAIN */
 
     main {
         width: 390px;
@@ -368,7 +368,7 @@ section div img:hover {
         margin-bottom: 25px;
     }
 
-    /*            ! SECTION REVIEW */
+    /* ! SECTION REVIEW */
 
     .section-review {
         width: 390px;
@@ -376,6 +376,7 @@ section div img:hover {
 
     .section-review h2 {
         margin-bottom: 5px;
+        font-size: 36px;
     }
 
     .scale {
@@ -401,6 +402,16 @@ section div img:hover {
         padding: 0;
     }
 
+    .clientBio {
+        font-size: 32px;
+    }
+
+    .quote {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+
     /*            ! SECTION ORDER */
 
     .section-order {
@@ -408,9 +419,13 @@ section div img:hover {
         padding: 10px 0;
     }
 
+    .section-order h3 {
+        font-size: 36px;
+    }
+
     .fieldset-container {
         width: 370px;
-        padding: 0 20px;
+        padding: 0 15px;
         white-space: normal;
     }
 
@@ -419,11 +434,26 @@ section div img:hover {
         margin: 0 auto;
         padding: 10px;
         white-space: normal;
+        font-size: 24px;
         /*                border: none;*/
     }
 
+    .fieldset-container fieldset input {
+        font-size: 18px;
+    }
+
+    .radio-selector {
+        width: 20px;
+        height: 20px;
+    }
+
     .fieldset-textarea {
-        width: 315px;
+        width: 330px;
+        font-size: 18px;
+    }
+
+    .fieldset-textarea::placeholder {
+        font-size: 18px;
     }
 
     .fieldset-inner-container {
@@ -434,27 +464,136 @@ section div img:hover {
     .fieldset-inner-container fieldset {
         padding: 10px;
     }
-}
 
-/* ! ACHIEVEMENTS */
+    .btn-container {
+        float: none !important;
+        margin-top: 10px;
+    }
 
-.section-achievements {
-    width: 370px;
-    overflow: hidden;
-}
+    .btn-order {
+        width: 100%;
+        height: 80px;
+    }
 
-.section-specialists {
-    width: 370px;
-    overflow: hidden;
-}
+    .video-container {
+        padding: 0 !important;
+        margin-top: 20px;
+        margin-left: 28px;
+    }
 
+    /* ! ACHIEVEMENTS */
 
-.section-clients{
-    width: 370px;
-    overflow: hidden;
-}
+    .section-achievements {
+        width: 390px;
+    }
 
-.footer {
-    width: 370px;
-    overflow: hidden;
+    .section-achievements h4 {
+        font-size: 36px;
+    }
+
+    .table2 {
+        width: 390px;
+        overflow-x: scroll;
+    }
+
+    .table2-rate {
+        width: 90px;
+    }
+
+    .four-star-block {
+        display: block;
+        margin-left: 8px;
+    }
+
+    .five-star-block {
+        display: block;
+    }
+
+    .award {
+        width: 260px;
+        margin: 0 70px;
+    }
+
+    /* ! SPECIALISTS   */
+
+    .section-specialists {
+        width: 410px;
+        padding: 20px 0;
+        /*        overflow: hidden;*/
+    }
+
+    .specialists-container {
+        width: 410px !important;
+        float: none !important;
+        margin-left: 40px !important;
+    }
+
+    .empDesc img {
+        margin-bottom: 15px;
+    }
+
+    .empDesc p {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .empHeader {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .specialists-header {
+        text-align: left;
+        white-space: normal;
+        margin: 0 40px;
+    }
+
+    /* ! CLIENTS    */
+
+    .section-clients {
+        width: 390px;
+    }
+
+    .clientsHead {
+        position: static;
+        float: none;
+        width: auto;
+        height: auto;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .clientsHead .empHeader {
+        margin: 20px 0;
+    }
+
+    .section-cliens-container {
+        width: 380px;
+        padding: 0 10px;
+        white-space: normal;
+    }
+
+    .section-clients-pic {
+        width: 140px;
+        /*        margin: 0 auto !important;*/
+    }
+
+    .yandex-pic {
+        width: 150px;
+    }
+
+    .fgk-pic {
+        height: 80px;
+    }
+
+    .paymart-pic {
+        width: 150px;
+    }
+
+    /* ! FOOTER   */
+
+    .footer {
+        width: 390px;
+        white-space: normal;
+    }
 }

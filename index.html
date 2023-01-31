@@ -144,8 +144,8 @@
                             </datalist>
                             <fieldset>
                                 <legend>Наличие макета</legend>
-                                <input name="maket" type="radio">Есть свой макет</input>
-                                <input name="maket" type="radio">Нет, хочу разработать вместе</input><br>
+                                <input class="radio-selector" name="maket" type="radio">Есть свой макет</input>
+                                <input class="radio-selector" name="maket" type="radio">Нет, хочу разработать вместе</input><br>
                             </fieldset>
                         </fieldset>
 
@@ -164,13 +164,13 @@
                             </fieldset>
                         </fieldset>
                     </div>
-                    <div style="clear: both; float:right; margin-top: 10px;">
-                        <input type="submit" value="Заказать"></input>
+                    <div class="btn-container" style="clear: both; float:right; margin-top: 10px;">
+                        <input class="btn-order" type="submit" value="Заказать"></input>
                     </div>
                 </form>
             </fieldset>
         </div>
-        <div class="clientBio" style="padding-left:40px; padding-top: 40px;">
+        <div class="clientBio video-container" style="padding-left:40px; padding-top: 40px;">
             <video controls loop width="350px" height="200px">
                 <source src="video\video.mp4">
             </video>
@@ -182,11 +182,11 @@
 
     <section id="Достижения" class="gradient section-achievements">
         <h4>Наши достижения</h4>
-        <div style="width: 800px;">
+        <div style="width: 800px;" class="container-table">
             <table class="table2">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th  class="table2-rate"></th>
                         <th colspan="5">Оценки наших клиентов</th>
                     </tr>
                 </thead>
@@ -202,8 +202,8 @@
                         <th><img src="pictures\rating\1.png" alt="rating 1" width="20px"></th>
                         <th><img src="pictures\rating\2.png" alt="rating 2" width="40px"></th>
                         <th><img src="pictures\rating\3.png" alt="rating 3" width="55px"></th>
-                        <th><img src="pictures\rating\4.png" alt="rating 4" width="75px"></th>
-                        <th><img src="pictures\rating\5.png" alt="rating 5" width="100px"></th>
+                        <th><img src="pictures\rating\2.png" alt="rating 4" width="40px" class="four-star-block"><img src="pictures\rating\2.png" width="40px"></th>
+                        <th><img src="pictures\rating\3.png" alt="rating 3" width="55px" class="five-star-block"><img src="pictures\rating\2.png" width="40px"></th>
                     </tr>
                     <tr>
                         <th>2018 </th>
@@ -269,7 +269,7 @@
     </section>
 
     <section id="Специалисты" class="gradient section-specialists">
-        <div style="float: right; width: 740px; margin-left: 60px;">
+        <div style="float: right; width: 740px; margin-left: 60px;" class="specialists-container">
             <div class="empDesc"><img class="empPic" src="pictures/people/emp1.jpg" alt="employee1" width="150px"
                     height="150px"><br>
                 <p>Евгений<br>CEO<br>Стаж 10 лет</p>
@@ -287,7 +287,7 @@
                 <p>Павел<br>Дизайнер<br>Стаж 8 лет</p>
             </div>
         </div>
-        <div style="float: left; margin-top: -70px; width: 300px;">
+        <div style="float: left; margin-top: -70px; width: 300px;" class="specialists-header">
             <p class="empHeader">
                 <font style="color: white;">Самые<br>крутые<br>специалисты</font><br>
                 <font style="color: pink;">работают для Вас</font>
@@ -302,42 +302,42 @@
                 <font style="color: pink;">нам?</font>
             </p>
         </div>
-        <div><img src="pictures/logos/logo11.png" alt="logo11" width="100px"
-                style="padding-left: 30px; border-radius: 0;">
+        <div class="section-cliens-container"><img src="pictures/logos/logo11.png" alt="logo11" width="100px"
+                style="padding-left: 30px; border-radius: 0;" class="section-clients-pic ">
             <img src="pictures/logos/logo12.png" alt="logo12" width="100px"
-                style="padding-left: 30px; padding-bottom: 30px;">
+                style="padding-left: 30px; padding-bottom: 30px;" class="section-clients-pic">
         </div>
-        <div style="margin-top: 20px;"><img src="pictures/logos/logo13.png" alt="logo13" width="100px"
+        <div class="section-cliens-container" style="margin-top: 20px;"><img  class="section-cliens-container yandex-pic" src="pictures/logos/logo13.png" alt="logo13" width="100px"
                 style="padding-left: 30px;">
             <img src="pictures/logos/logo14.png" alt="logo14" width="100px"
-                style="padding-left: 30px; margin-bottom: -20px;">
+                style="padding-left: 30px; margin-bottom: -20px;" class="section-clients-pic">
 
         </div>
-        <div><img src="pictures/logos/logo15.png" alt="logo15" width="100px"
-                style="padding-left: 30px; margin-bottom: 25px;">
-            <img src="pictures/logos/logo16.png" alt="logo16" width="100px" style="padding-left: 30px;">
-            <img src="pictures/logos/logo17.png" alt="logo17" width="100px" style="padding-left: 30px;">
-            <img src="pictures/logos/logo18.png" alt="logo18" width="100px" style="padding-left: 30px;">
+        <div class="section-cliens-container"><img src="pictures/logos/logo15.png" alt="logo15" width="100px"
+                style="padding-left: 30px; margin-bottom: 25px;" class="section-clients-pic fgk-pic">
+            <img src="pictures/logos/logo16.png" alt="logo16" width="100px" style="padding-left: 30px;" class="section-clients-pic paymart-pic">
+            <img src="pictures/logos/logo17.png" alt="logo17" width="100px" style="padding-left: 30px;" class="section-clients-pic">
+            <img src="pictures/logos/logo18.png" alt="logo18" width="100px" style="padding-left: 30px;" class="section-clients-pic">
             <img src="pictures/logos/logo19.png" alt="logo19" width="80px"
-                style="padding-left: 30px; padding-bottom: 40px;">
+                style="padding-left: 30px; padding-bottom: 40px;" class="section-clients-pic">
             <img src="pictures/logos/logo20.png" alt="logo20" width="80px"
-                style="padding-left: 30px;padding-bottom: 30px;">
+                style="padding-left: 30px;padding-bottom: 30px;" class="section-clients-pic">
             <img src="pictures/logos/logo21.png" alt="logo21" width="80px"
-                style="padding-left: 30px;padding-bottom: 30px;">
+                style="padding-left: 30px;padding-bottom: 30px;" class="section-clients-pic">
         </div>
-        </div>
-        <div style="margin-left: 30px;">
+        <!-- </div> -->
+        <div style="margin-left: 30px;" class="section-cliens-container">
             <img src="pictures/logos/logo1.png" alt="logo1" width="100px"
-                style="padding-right: 30px;  margin-bottom: 25px;">
-            <img src="pictures/logos/logo2.png" alt="logo1" width="100px" style="padding-right: 30px;">
-            <img src="pictures/logos/logo3.png" alt="logo1" width="100px" style="padding-right: 30px;">
+                style="padding-right: 30px;  margin-bottom: 25px;" class="section-clients-pic">
+            <img src="pictures/logos/logo2.png" alt="logo1" width="100px" style="padding-right: 30px;" class="section-clients-pic">
+            <img src="pictures/logos/logo3.png" alt="logo1" width="100px" style="padding-right: 30px;" class="section-clients-pic">
             <img src="pictures/logos/logo4.png" alt="logo1" width="100px"
-                style="padding-right: 30px; border-radius: 0;">
-            <img src="pictures/logos/logo5.png" alt="logo1" width="100px" style="padding-right: 30px;">
-            <img src="pictures/logos/logo6.png" alt="logo1" width="100px" style="padding-right: 30px;">
-            <img src="pictures/logos/logo7.png" alt="logo1" width="100px" style="padding-right: 30px;">
-            <img src="pictures/logos/logo8.png" alt="logo1" width="100px" style="padding-right: 30px;">
-            <img src="pictures/logos/logo9.png" alt="logo1" width="100px" style="padding-right: 30px;">
+                style="padding-right: 30px; border-radius: 0;" class="section-clients-pic">
+            <img src="pictures/logos/logo5.png" alt="logo1" width="100px" style="padding-right: 30px;" class="section-clients-pic">
+            <img src="pictures/logos/logo6.png" alt="logo1" width="100px" style="padding-right: 30px;" class="section-clients-pic">
+            <img src="pictures/logos/logo7.png" alt="logo1" width="100px" style="padding-right: 30px;" class="section-clients-pic">
+            <img src="pictures/logos/logo8.png" alt="logo1" width="100px" style="padding-right: 30px;" class="section-clients-pic">
+            <img src="pictures/logos/logo9.png" alt="logo1" width="100px" style="padding-right: 30px;" class="section-clients-pic">
         </div>
 
 
