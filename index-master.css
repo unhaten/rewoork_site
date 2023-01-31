@@ -298,7 +298,7 @@ section div img:hover {
 
 /* ! FOR LOW-RESOLUTION SCREEN */
 
-@media screen and (max-width: 580px) {
+@media all and (max-width: 580px) {
     body {
         width: 564px;
     }
@@ -361,7 +361,6 @@ section div img:hover {
 
     main {
         width: 390px;
-        overflow: hidden;
     }
 
     .main-pic {
@@ -373,7 +372,6 @@ section div img:hover {
 
     .section-review {
         width: 390px;
-        overflow: hidden;
     }
 
     .section-review h2 {
@@ -419,7 +417,6 @@ section div img:hover {
     .section-order {
         width: 410px;
         padding: 10px 0;
-        overflow: hidden;
     }
 
     .section-order h3 {
@@ -523,7 +520,6 @@ section div img:hover {
     .section-specialists {
         width: 410px;
         padding: 20px 0;
-        overflow: hidden;
     }
 
     .specialists-container {
@@ -556,7 +552,6 @@ section div img:hover {
 
     .section-clients {
         width: 390px;
-        overflow: hidden;
     }
 
     .clientsHead {
@@ -599,7 +594,6 @@ section div img:hover {
 
     .footer {
         width: 390px;
-        overflow: hidden;
         white-space: normal;
     }
 }
